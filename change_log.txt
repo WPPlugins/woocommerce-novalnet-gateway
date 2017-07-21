@@ -1,0 +1,81 @@
+*********************************************************************
+*                          CHANGE LOGS                              *
+********************************************************************* 
+
+Version: wordpress_v_4.x_woocommerce_v_2.2.x-3.0.2_woo-subscription_v_1.5.x-2.2.4_novalnet_v_11.2.0.zip
+-------------------------------------------------------------------------------------------------------
+
+        [Compatible] Tested with WooCommerce version upto 3.0.2 and Subscription version upto 2.2.4
+
+Version: wordpress_v_4.x_woocommerce_v_2.2.x-2.6.x_woo-subscription_v_1.5.x-2.x_novalnet_v_11.1.1.zip
+-----------------------------------------------------------------------------------------------------
+
+	[New] Implemented Novalnet updates page
+	[Enhanced] Updated payment logo for Credit Card and Invoice payment
+	[Enhanced] Added new parameter in all API calls
+	[Fix] Restriction of email notification to the end customer on callback execution
+	[Fix] Issue with single iteration Subscription product (Eg: price per month for 1 month)
+	[Compatible] Tested with WordPress version 4.7.3 and Subscription version 2.1.4
+
+Version: wordpress_v_4.x_woocommerce_v_2.2.x-2.6.x_woo-subscription_v_1.5.x-2.x_novalnet_v_11.1.0.zip
+-----------------------------------------------------------------------------------------------------
+  
+	- Credit Card iframe updated.
+	- One click shopping for Credit Card and PayPal implemented.
+	- Edit option in Credit Card and PayPal for registered customers implemented.
+	- Zero amount booking for PayPal implemented.
+	- On-hold transactions for PayPal implemented.
+	- New payment method "Przelewy24" added.
+
+Version: wordpress_v_4.4.1_woocommerce_v_2.5.1_woo-subscription_v_1.5.29_2.0.8_novalnet_v_11.0.0.zip
+----------------------------------------------------------------------------------------------------
+
+	- Auto configuration of vendor credentials.
+	- Zero amount booking.
+	- One click shopping for Direct Debit SEPA.
+	- Iframe and hosted page implementation for Credit Card.
+	- Implemented Direct Debit SEPA with payment guarantee, Invoice with payment guarantee.
+	- Edit option in Direct Debit SEPA for registered customers.
+	- Notify URL configuration in shop backend.
+	- Logo control has been implemented in global configuration.
+	- Responsive templates has been implemented.
+	- New booking with payment reference.
+	- Compatibility has been checked for subscription version 1.5.29 and 2.0.8
+
+Version: wordpress_v_4.x_woocommerce_v_2.3.8-2.6.x_woo-subscription_v_2.0.x_novalnet_v_10.3.1.zip
+-------------------------------------------------------------------------------------------------
+	- Compatibility has been checked for latest WooCommerce and Subscription version.
+	- Novalnet payment module has been optimized as per new testcase.
+
+Version: wordpress_v_4.x_woocommerce_v_2.3.8-2.5.x_woo-subscription_v_2.0.x_novalnet_v_10.3.0.zip
+-------------------------------------------------------------------------------------------------
+	- Credit Card Iframe implemented.
+
+Version: wordpress_v_4.x_woocommerce_v_2.3.8-2.5.x_woo-subscription_v_2.0.x_novalnet_v_10.2.1.zip
+-------------------------------------------------------------------------------------------------
+	- Implemented giropay payment.
+	- Compatibility has been checked for latest Woocommerce version 2.3.8 - 2.5.x and subscription version 2.0.x.
+	- Novalnet payment module has been optimized as per new testcase.
+
+Version: wordpress_v_4.x_woocommerce_v_2.3.8-2.4.x_woo-subscription_v_2.0.x_novalnet_v_10.2.0.zip
+-------------------------------------------------------------------------------------------------
+
+	- Direct Debit SEPA overlay and Credit Card Type removed.
+	- External plugin compatibility has been checked.
+- Compatibility has been checked for latest Woocommerce version 2.3.8 - 2.4.x and subscription version 2.0.x.
+
+Version: wordpress_v_3.7.x-4.x_woocommerce_v_2.1.x-2.3.x_woo-subscription_v_1.4.x-1.5.x_novalnet_v_10.1.1.zip
+-------------------------------------------------------------------------------------------------------------
+	- Compatibility has been checked for WooCommerce version upto 2.4.6.
+
+Version: wordpress_v_3.7.x-4.x_woocommerce_v_2.1.x-2.3.x_novalnet_v_10.1.0.zip
+------------------------------------------------------------------------------
+
+	- External plugin compatibility has been checked.
+	- Payment reference has been implemented.
+
+Version: wordpress_v_3.7.x-4.x_woocommerce_v_2.1.x-2.3.x_novalnet_v_10.0.0.zip
+------------------------------------------------------------------------------
+
+	- New release
+

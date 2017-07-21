@@ -1,0 +1,24 @@
+﻿Pre-Installation Procedures 
+****************************
+
+This section describes the following pre-installation steps that ensure successful installation
+
+Step 1: Configure Product Activation Key 
+
+Novalnet introduces Product Activation Key to fill all the merchant credentials (Merchant ID, Authentication code, Project ID, Tariff ID, Payment access key) automatically on entering the unique key into the Novalnet Global Configuration in shop backend.
+
+To get the "Product activation key", login to the Novalnet Administration Portal(https://admin.novalnet.de) and navigate to PROJECTS -> [Select project from the list] -> Shop Parameters –> API Signature (Product activation key).
+
+Step 2: Configure IP address
+
+Novalnet requires an IP address to which it can connect to establish the server API's request and response. It is mandatory to configure the merchant's server IP address in Novalnet Administration portal, for all API access (Auto configuration with Product Activation key, Credit card iframe loading, Transaction API access, Transaction status enquiry and update).
+
+To configure the IP address, login to the Novalnet Administration Portal(https://admin.novalnet.de) and navigate to PROJECTS -> [Select project from the list] -> Project Overview –> Payment Request IP's, click on Update Payment Request IP. Configure the merchant's server IP under Payment Request IP's.
+
+Step 3: Configure vendor script URL
+
+Vendor script URL is required to configure in the Novalnet Administration Portal, to keep the merchant's database/system updated and synchronize with the Novalnet transaction status. The merchant system will be notified through Novalnet system (asynchronous) about each transaction and its status.
+
+To configure the vendor script URL (Refer callback_script_testing_procedure.txt file) and optional vendor script parameters, login to the Novalnet Administration portal(https://admin.novalnet.de) and navigate to PROJECTS -> [Select project from the list] -> Project Overview -> Edit Payment Overview. 
+
+Note: Always make sure that the vendor script URL configured in the shop should be same as the URL configured in Novalnet Administration portal.

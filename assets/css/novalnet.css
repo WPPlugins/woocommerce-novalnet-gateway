@@ -1,0 +1,18 @@
+.novalnet_map_header{
+	background-color:#0080c9;
+	color:#fff;
+	font: bold 14px calibri;
+	padding:5px;
+	text-align:center;
+	width:98%;
+}
+.novalnet_map_header:hover{
+	background-color:#878787;
+	cursor: pointer;
+}
+.novalnet_map_header a{
+	color:#fff;
+}
+.novalnet_map_header a:hover{
+	color:#fff;
+}

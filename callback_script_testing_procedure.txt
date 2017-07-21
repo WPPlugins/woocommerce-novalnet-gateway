@@ -1,0 +1,73 @@
+CALLBACK SCRIPT TESTING PROCEDURE      
+---------------------------------
+Please follow the below mentioned steps to call the callback script for all the payment types.
+
+URL: <Site URL>/?wc-api=novalnet_callback
+
+E.g.: https://woocommerce-demo.novalnet.de/?wc-api=novalnet_callback 
+
+Callbackscript configuration 
+----------------------------
+Kindly make the following changes in the mentioned path, login as shop admin, go to WooCommerce -> Settings -> Novalnet Global Configuration in shop backend and configure the following changes under "Merchant script management".
+	
+1. Enable debug mode = False  // To execute the callbackscript in LIVE mode, True for testing
+
+2. Enable test mode = False  // To execute the callbackscript in LIVE mode, True for testing
+
+3. Enable E-mail notification for callback = True  // To receive mail for successful execution of callbackscript
+
+4. E-mail address (To) = ''  // Adapt recipient email address
+
+5. E-mail address (Bcc) = ''  // Adapt recipient email address on BCC
+
+    **************************************************************************************
+    *  Payment type      		*  Payment name                                  *
+    **************************************************************************************
+    *  INVOICE_START                    *  Invoice (For Initial)                         *
+    *  INVOICE_START                    *  Prepayment (For Initial)                      *
+    *  INVOICE_CREDIT    		*  Invoice (For Credit)                          *
+    *  INVOICE_CREDIT    		*  Prepayment (For Credit)                       *
+    *  GUARANTEED_INVOICE_START         *  Invoice with payment guarantee (For Initial)  *      
+    *  GUARANTEED_INVOICE_CREDIT        *  Invoice with payment guarantee (For Credit)   *
+    *  PAYPAL            		*  PayPal                                	 *
+    *  ONLINE_TRANSFER   		*  Instant Bank Transfer                         *
+    *  CREDITCARD      		  	*  Credit Card and Credit Card 3D Secure         *
+    *  IDEAL            		*  iDEAL                                         *
+    *  DIRECT_DEBIT_SEPA		*  Direct Debit SEPA                             *
+    *  GUARANTEED_DIRECT_DEBIT_SEPA	*  Direct Debit SEPA with payment guarantee      *
+    *  EPS               		*  eps                                   	 *
+    *  GIROPAY         	  		*  giropay	                                 *
+    *  PRZELEWY24			*  Przelewy24				         *
+    **************************************************************************************
+
+INVOICE_CREDIT payment_type 
+---------------------------
+Formatted URL: 
+
+<Site URL>/?wc-api=novalnet_callback&vendor_id=4&status=100&payment_type=INVOICE_CREDIT&tid_payment=12675800001204435&amount=3778&tid=12675800001204435&tid_status=100
+
+Other payment type
+------------------
+Formatted URL: 
+
+<Site URL>/?wc-api=novalnet_callback&vendor_id=4&status=100&payment_type=PAYPAL&amount=3778&tid=12675800001204435&tid_status=100
+
+Please use the respective payment type in the param "payment_type". (E.g : payment_type=PAYPAL)
+
+Parameters:
+-----------
+vendor_id          - Merchant ID
+
+status             - Successful payment transaction value
+
+payment_type       - Type of payment process
+
+tid_payment        - Existing appropriate order transaction id
+
+amount             - Customer paid amount in cents
+
+tid                - Callback script transaction id
+
+tid_status         - Original transaction status
+
+***** End of File *****
